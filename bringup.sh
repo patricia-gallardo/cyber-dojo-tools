@@ -20,6 +20,11 @@ confirm() {
     esac
 }
 
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root"
+   exit 1
+fi
+
 confirm "Get Docker? [y/N]" && wget -qO- https://get.docker.com/ | sh
 confirm "Add dojo user? [y/N]" && adduser dojo
 confirm "Add dojo to sudoers? [y/N]" && usermod -aG sudo dojo
