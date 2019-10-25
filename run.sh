@@ -18,4 +18,4 @@ confirm() {
 confirm "Create start point? [y/N]" && ./cyber-dojo start-point create insecure --custom https://github.com/patricia-gallardo/insecure-cplusplus-dojo
 confirm "Bring up with start point? [y/N]" && ./cyber-dojo up --custom=insecure
 confirm "Bring up default? [y/N]" && ./cyber-dojo up
-confirm "Shut down? [y/N]" && ./cyber-dojo up
+confirm "Shut down? [y/N]" && ./cyber-dojo down
