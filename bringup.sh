@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# Cyber-Dojo
 # https://blog.cyber-dojo.org/2016/10/running-your-own-cyber-dojo-server-on.html
 # https://blog.cyber-dojo.org/2017/09/running-your-own-cyber-dojo-server.html
+# Digital Ocean
 # https://www.digitalocean.com/docs/droplets/how-to/add-ssh-keys/to-account/
+# https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
 
 confirm() {
     # call with a prompt string or use a default
