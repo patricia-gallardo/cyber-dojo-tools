@@ -21,6 +21,7 @@ confirm "Get Docker? [y/N]" && wget -qO- https://get.docker.com/ | sh
 confirm "Add dojo user? [y/N]" && adduser dojo
 confirm "Add dojo to sudoers? [y/N]" && usermod -aG sudo dojo
 confirm "Add dojo to docker? [y/N]" && usermod -aG docker dojo
+confirm "Add dojo to ssh? [y/N]" && rsync --archive --chown=dojo:dojo ~/.ssh /home/dojo
 confirm "Make /cyber-dojo directory? [y/N]" && sudo mkdir /cyber-dojo
 confirm "Chown /cyber-dojo? [y/N]" && sudo chown 19663:65533 /cyber-dojo
 confirm "Curl cyber-dojo? [y/N]" && curl -O https://raw.githubusercontent.com/cyber-dojo/commander/master/cyber-dojo
