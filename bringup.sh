@@ -17,11 +17,11 @@ confirm() {
     esac
 }
 
-confirm "Get Docker?" && wget -qO- https://get.docker.com/ | sh
-confirm "Add dojo user?" && adduser dojo
-confirm "Add dojo to sudoers?" && usermod -aG sudo dojo
-confirm "Add dojo to docker?" && usermod -aG docker dojo
-confirm "Make /cyber-dojo directory?" && sudo mkdir /cyber-dojo
-confirm "Chown /cyber-dojo?" && sudo chown 19663:65533 /cyber-dojo
-confirm "Curl cyber-dojo?" && curl -O https://raw.githubusercontent.com/cyber-dojo/commander/master/cyber-dojo
-confirm "Chmod cyber-dojo?" && chmod 700 cyber-dojo
+confirm "Get Docker? [y/N]" && wget -qO- https://get.docker.com/ | sh
+confirm "Add dojo user? [y/N]" && adduser dojo
+confirm "Add dojo to sudoers? [y/N]" && usermod -aG sudo dojo
+confirm "Add dojo to docker? [y/N]" && usermod -aG docker dojo
+confirm "Make /cyber-dojo directory? [y/N]" && sudo mkdir /cyber-dojo
+confirm "Chown /cyber-dojo? [y/N]" && sudo chown 19663:65533 /cyber-dojo
+confirm "Curl cyber-dojo? [y/N]" && curl -O https://raw.githubusercontent.com/cyber-dojo/commander/master/cyber-dojo
+confirm "Chmod cyber-dojo? [y/N]" && chmod 700 cyber-dojo
