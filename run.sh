@@ -22,7 +22,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 confirm "Shut down cyber-dojo? [y/N]" && ./cyber-dojo down
-confirm "Update cyber-dojo? [y/N]" && ./cyber-dojo update
+confirm "Update cyber-dojo? [y/N]" && ./cyber-dojo update latest
 confirm "Create start point? [y/N]" && ./cyber-dojo start-point create insecure --custom https://github.com/patricia-gallardo/insecure-cplusplus-dojo
 confirm "Bring up custom? [y/N]" && ./cyber-dojo up --custom=insecure
 #confirm "Bring up custom + web? [y/N]" && CYBER_DOJO_WEB_IMAGE=turtlesec/web CYBER_DOJO_WEB_TAG=latest ./cyber-dojo up --custom=insecure
